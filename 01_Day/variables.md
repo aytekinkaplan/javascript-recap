@@ -5,7 +5,7 @@ This JavaScript code defines a set of variables, each representing different dat
 1. **Personal Information Variables:**
 
    - `let firstName = "Murat";`: This variable holds the first name of a person as a string.
-   - `let lasName = "Kurt";`: This variable holds the last name as a string.
+   - `let lasName = "Melek";`: This variable holds the last name as a string.
    - `let country = "Holland";`: Stores the name of a country as a string.
    - `let city = "Amsterdam";`: Stores the name of a city within the country as a string.
    - `let age = 32;`: Stores the age of the person as a number.

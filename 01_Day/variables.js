@@ -1,5 +1,5 @@
 let firstName = "Murat";
-let lasName = "Kurt";
+let lasName = "Melek";
 let country = "Holland";
 let city = "Amsterdam";
 let age = 32;
