@@ -77,3 +77,33 @@ function calculateSum(num1, num2, num3, ...rest) {
 }
 
 console.log("Sum of 1, 2, 3, 4, and 5:", calculateSum(1, 2, 3, 4, 5)); // 15
+
+function sumAllNumbers(...numbers) {
+  return numbers.reduce((acc, num) => acc + num, 0);
+}
+
+console.log("Sum of all numbers:", sumAllNumbers(1, 2, 3, 4, 5)); // 15
+
+const multiply = (num1, num2) => num1 * num2;
+
+console.log("Product of 3 and 4:", multiply(3, 4)); // 12
+
+const add = (num1, num2) => num1 + num2;
+
+console.log("Sum of 2 and 3:", add(2, 3)); // 5
+
+const subtract = (num1, num2) => num1 - num2;
+
+console.log("Difference of 10 and 5:", subtract(10, 5)); // 5
+
+const divide = (num1, num2) => num1 / num2;
+
+console.log("Quotient of 20 and 5:", divide(20, 5)); // 4
+
+const remainder = (num1, num2) => num1 % num2;
+
+console.log("Remainder of 10 and 3:", remainder(10, 3)); // 1
+
+const power = (num1, num2) => num1 ** num2;
+
+console.log("Power of 2 to the power of 3:", power(2, 3)); // 8
