@@ -194,3 +194,42 @@ console.log("Capitalized words:", capitalizeWords("hello world")); // 'Hello Wor
 /* Additional examples follow the same structure: provide a function name,
 logic inside, and log the output to console for a clear result. Continue this 
 pattern as needed for various use cases. */
+
+// Örnek 1: Tüm özellikler tanımlı
+let person1 = {
+  name: "Ali",
+  address: {
+    street: {
+      name: "Atatürk Caddesi",
+    },
+  },
+};
+
+let name1 = person1?.address?.street?.name;
+console.log(name1); // "Atatürk Caddesi"
+
+// Örnek 2: street özelliği eksik
+let person2 = {
+  name: "Veli",
+  address: {
+    // street özelliği yok
+  },
+};
+
+let name2 = person2?.address?.street?.name;
+console.log(name2); // undefined
+
+// Örnek 3: address özelliği eksik
+let person3 = {
+  name: "Ayşe",
+  // address özelliği yok
+};
+
+let name3 = person3?.address?.street?.name;
+console.log(name3); // undefined
+
+// Örnek 4: person nesnesi tanımsız
+let person4 = null;
+
+let name4 = person4?.address?.street?.name;
+console.log(name4); // undefined
