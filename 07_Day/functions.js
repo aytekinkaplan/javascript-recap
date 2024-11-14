@@ -60,13 +60,13 @@ function printName(name) {
 }
 printName("John"); // Hello, John!
 
-// Function to print a greeting with full name
+// Function to print a greeting with a full name
 function printFullName(firstName, lastName) {
   console.log("Hello, " + firstName + " " + lastName + "!");
 }
 printFullName("Alice", "Smith"); // Hello, Alice Smith!
 
-// Function with multiple parameters and rest parameters
+// Function with multiple parameters and rest parameters to calculate the sum
 function calculateSum(num1, num2, num3, ...rest) {
   let sum = num1 + num2 + num3;
   for (let num of rest) {
@@ -76,37 +76,35 @@ function calculateSum(num1, num2, num3, ...rest) {
 }
 console.log("Sum of 1, 2, 3, 4, and 5:", calculateSum(1, 2, 3, 4, 5)); // 15
 
-// Function to sum all numbers using the rest parameter
+// Function to sum all numbers using the rest parameter and reduce
 function sumAllNumbers(...numbers) {
   return numbers.reduce((acc, num) => acc + num, 0);
 }
 console.log("Sum of all numbers:", sumAllNumbers(1, 2, 3, 4, 5)); // 15
 
 // Arrow function to multiply two numbers
-const multiply = (num1, num2) => num1 * num2;
-console.log("Product of 3 and 4:", multiply(3, 4)); // 12
+const multiplyArrow = (num1, num2) => num1 * num2;
+console.log("Product of 3 and 4:", multiplyArrow(3, 4)); // 12
 
 // Arrow function to add two numbers
-const add = (num1, num2) => num1 + num2;
-console.log("Sum of 2 and 3:", add(2, 3)); // 5
+const addArrow = (num1, num2) => num1 + num2;
+console.log("Sum of 2 and 3:", addArrow(2, 3)); // 5
 
 // Arrow function to subtract two numbers
-const subtract = (num1, num2) => num1 - num2;
-console.log("Difference of 10 and 5:", subtract(10, 5)); // 5
+const subtractArrow = (num1, num2) => num1 - num2;
+console.log("Difference of 10 and 5:", subtractArrow(10, 5)); // 5
 
 // Arrow function to divide two numbers
-const divide = (num1, num2) => num1 / num2;
-console.log("Quotient of 20 and 5:", divide(20, 5)); // 4
+const divideArrow = (num1, num2) => num1 / num2;
+console.log("Quotient of 20 and 5:", divideArrow(20, 5)); // 4
 
-// Arrow function to find remainder
-const remainder = (num1, num2) => num1 % num2;
-console.log("Remainder of 10 and 3:", remainder(10, 3)); // 1
+// Arrow function to find the remainder
+const remainderArrow = (num1, num2) => num1 % num2;
+console.log("Remainder of 10 and 3:", remainderArrow(10, 3)); // 1
 
 // Arrow function to calculate power
-const power = (num1, num2) => num1 ** num2;
-console.log("Power of 2 to the power of 3:", power(2, 3)); // 8
-
-// Additional 30 Function Examples
+const powerArrow = (num1, num2) => num1 ** num2;
+console.log("Power of 2 to the power of 3:", powerArrow(2, 3)); // 8
 
 // Function to calculate factorial of a number
 function factorial(n) {
@@ -182,7 +180,7 @@ function hypotenuse(a, b) {
 }
 console.log("Hypotenuse of sides 3 and 4:", hypotenuse(3, 4)); // 5
 
-// Function to capitalize the first letter of each word
+// Function to capitalize the first letter of each word in a sentence
 function capitalizeWords(str) {
   return str
     .split(" ")
@@ -191,11 +189,7 @@ function capitalizeWords(str) {
 }
 console.log("Capitalized words:", capitalizeWords("hello world")); // 'Hello World'
 
-/* Additional examples follow the same structure: provide a function name,
-logic inside, and log the output to console for a clear result. Continue this 
-pattern as needed for various use cases. */
-
-// Örnek 1: Tüm özellikler tanımlı
+// Optional chaining examples
 let person1 = {
   name: "Ali",
   address: {
@@ -204,32 +198,30 @@ let person1 = {
     },
   },
 };
-
 let name1 = person1?.address?.street?.name;
 console.log(name1); // "Atatürk Caddesi"
 
-// Örnek 2: street özelliği eksik
+// Optional chaining with missing properties
 let person2 = {
   name: "Veli",
-  address: {
-    // street özelliği yok
-  },
+  address: {}, // Missing street
 };
-
 let name2 = person2?.address?.street?.name;
 console.log(name2); // undefined
 
-// Örnek 3: address özelliği eksik
-let person3 = {
-  name: "Ayşe",
-  // address özelliği yok
-};
-
+// Optional chaining with null object
+let person3 = null;
 let name3 = person3?.address?.street?.name;
 console.log(name3); // undefined
 
-// Örnek 4: person nesnesi tanımsız
+// Nullish coalescing examples
 let person4 = null;
+let name4 = person4?.name ?? "Unknown";
+console.log(name4); // "Unknown"
 
-let name4 = person4?.address?.street?.name;
-console.log(name4); // undefined
+// Nullish coalescing with defined but empty name
+let person5 = {
+  name: "",
+};
+let name5 = person5?.name ?? "Unknown";
+console.log(name5); // "" (empty string is returned)
