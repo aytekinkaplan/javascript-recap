@@ -1,51 +1,58 @@
-//scope.js
-a = "JavaScript"; // declaring a variable without let or const make it available in window object and this found anywhere
-b = 10; // this is a global scope variable and found in the window object
+// Global Scope Example 1
+let a = "JavaScript"; // Global variable
+let b = 10; // Global variable
+
 function letsLearnScope() {
-  console.log(a, b);
+  console.log(a, b); // Accesses global variables, logs: JavaScript 10
   if (true) {
-    console.log(a, b);
+    console.log(a, b); // Accesses global variables, logs: JavaScript 10
   }
 }
-console.log(a, b); // accessible
-
-letsLearnScope(), console.log(a, b);
-
-//scope.js
-let a = "JavaScript"; // is a global scope it will be found anywhere in this file
-let b = 10; // is a global scope it will be found anywhere in this file
-function letsLearnScope() {
-  console.log(a, b); // JavaScript 10, accessible
-  if (true) {
-    let a = "Python";
-    let b = 100;
-    console.log(a, b); // Python 100
-  }
-  console.log(a, b);
-}
+console.log(a, b); // Logs: JavaScript 10
 letsLearnScope();
-console.log(a, b); // JavaScript 10, accessible
+console.log(a, b); // Logs: JavaScript 10
 
-//scope.js
-let a = "JavaScript"; // is a global scope it will be found anywhere in this file
-let b = 10; // is a global scope it will be found anywhere in this file
-// Function scope
-function letsLearnScope() {
-  console.log(a, b); // JavaScript 10, accessible
-  let value = false;
-  // block scope
-  if (true) {
-    // we can access from the function and outside the function but
-    // variables declared inside the if will not be accessed outside the if block
-    let a = "Python";
-    let b = 20;
-    let c = 30;
-    let d = 40;
-    value = !value;
-    console.log(a, b, c, value); // Python 20 30 true
-  }
-  // we can not access c because c's scope is only the if block
-  console.log(a, b, value); // JavaScript 10 true
+// Global Scope Example 2
+let c = "Global Scope Variable"; // Global variable
+function printGlobalVariable() {
+  console.log(c); // Logs: Global Scope Variable
 }
-letsLearnScope();
-console.log(a, b); // JavaScript 10, accessible
+printGlobalVariable();
+
+// Function Scope Example
+function letsLearnScopeFunction() {
+  let d = "Function Scoped Variable"; // Function-scoped variable
+  console.log(d); // Logs: Function Scoped Variable
+
+  if (true) {
+    let e = "Block Scoped Variable"; // Block-scoped variable
+    console.log(e); // Logs: Block Scoped Variable
+  }
+  // console.log(e); // Error: e is not defined (block-scoped)
+}
+letsLearnScopeFunction();
+
+// Block Scope Example
+let f = "Outer Scope"; // Global variable
+if (true) {
+  let f = "Block Scope"; // Redefines variable for this block only
+  console.log(f); // Logs: Block Scope
+}
+console.log(f); // Logs: Outer Scope
+
+// Re-declaration Example
+let g = "First Declaration";
+// let g = "Second Declaration"; // Error: Identifier 'g' has already been declared
+
+// Const Example
+const h = "Constant Value"; // Block-scoped and immutable
+// h = "New Value"; // Error: Assignment to constant variable
+console.log(h); // Logs: Constant Value
+
+// Hoisting Example
+function hoistingExample() {
+  console.log(i); // Undefined (hoisted but uninitialized)
+  var i = "Hoisted Variable"; // Function-scoped variable
+  console.log(i); // Logs: Hoisted Variable
+}
+hoistingExample();
