@@ -34,7 +34,7 @@ const hasFirstName = "firstName" in person;
 console.log("Has firstName:", hasFirstName);
 
 const hasAge = "age" in person;
-console.log("Has age:", hasAge); 
+console.log("Has age:", hasAge);
 
 const hasDataTransferItemList = "DataTransferItemList" in person;
 console.log("Has DataTransferItemList:", hasDataTransferItemList);
