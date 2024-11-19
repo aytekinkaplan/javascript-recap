@@ -23,4 +23,5 @@ const sumArray = (arr) => {
   arr.forEach(callBack);
   return sum;
 };
-huzzah;
+
+console.log(sumArray(numbers));
