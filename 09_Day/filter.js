@@ -1,3 +1,4 @@
+// Array of countries (contains duplicates)
 const countries = [
   "Finland",
   "Denmark",
@@ -57,10 +58,23 @@ const countries = [
   "United Kingdom",
   "Vatican City",
 ];
+
+// Filter countries that include "land"
 const countriesWithLand = countries.filter((country) =>
   country.includes("land")
 );
-console.log(countriesWitIa);
-const countriesWithLand2 = countries.filter((country) =>
+console.log("Countries with 'land':", countriesWithLand);
+
+// Filter countries that include "ia" (case insensitive)
+const countriesWithIa = countries.filter((country) =>
   country.toLowerCase().includes("ia")
 );
+console.log("Countries with 'ia':", countriesWithIa);
+
+// Remove duplicates from the 'countriesWithLand' array
+const uniqueCountriesWithLand = [...new Set(countriesWithLand)];
+console.log("Unique countries with 'land':", uniqueCountriesWithLand);
+
+// Remove duplicates from the 'countriesWithIa' array
+const uniqueCountriesWithIa = [...new Set(countriesWithIa)];
+console.log("Unique countries with 'ia':", uniqueCountriesWithIa);
