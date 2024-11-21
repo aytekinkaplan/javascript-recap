@@ -1,0 +1,6 @@
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+const age = ages.find((age) => age < 20);
+console.log(age);
+
+const names = ["Martin", "Bob", "Charlie", "David", "Alice"];
+const result = names.find((name) => name.startsWith("A"));
