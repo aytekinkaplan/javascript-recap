@@ -3,3 +3,4 @@ const countriesWithLand = countries.filter((country) =>
   country.includes("land")
 );
 console.log(countriesWithLand);
+
