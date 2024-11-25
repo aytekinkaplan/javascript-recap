@@ -41,3 +41,7 @@ const allLanguages = [
 const uniqueLanguages = new Set(allLanguages);
 console.log(uniqueLanguages);
 console.log(typeof uniqueLanguages);
+
+const uniqueLanguagesArray = Array.from(uniqueLanguages);
+console.log(uniqueLanguagesArray);
+console.log(typeof uniqueLanguagesArray);
