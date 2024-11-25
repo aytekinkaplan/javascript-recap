@@ -109,3 +109,48 @@ const languages = new Map([
   ["Korean", 26],
 ]);
 console.log(languages);
+
+const countries = [
+  ["Finland", "Helsinki"],
+  ["Sweden", "Stockholm"],
+  ["Norway", "Oslo"],
+  ["Denmark", "Copenhagen"],
+  ["Iceland", "Reykjavik"],
+  ["Estonia", "Tallinn"],
+  ["Latvia", "Riga"],
+  ["Lithuania", "Vilnius"],
+  ["Poland", "Warsaw"],
+  ["Slovakia", "Bratislava"],
+  ["Slovenia", "Ljubljana"],
+  ["Ukraine", "Kyiv"],
+  ["Belarus", "Minsk"],
+  ["Belgium", "Brussels"],
+  ["Bosnia and Herzegovina", "Sarajevo"],
+  ["Bulgaria", "Sofia"],
+  ["Croatia", "Zagreb"],
+  ["Cyprus", "Nicosia"],
+  ["Czechia", "Prague"],
+  ["Denmark", "Copenhagen"],
+  ["Estonia", "Tallinn"],
+  ["Faroe Islands", "Torshavn"],
+  ["Finland", "Helsinki"],
+  ["France", "Paris"],
+  ["Germany", "Berlin"],
+  ["Greece", "Athens"],
+  ["Ireland", "Dublin"],
+  ["Italy", "Rome"],
+  ["Latvia", "Riga"],
+  ["Lithuania", "Vilnius"],
+  ["Luxembourg", "Luxembourg"],
+  ["Malta", "Valletta"],
+  ["Netherlands", "Amsterdam"],
+  ["Portugal", "Lisbon"],
+  ["Romania", "Bucharest"],
+  ["Slovakia", "Bratislava"],
+  ["Slovenia", "Ljubljana"],
+  ["Spain", "Madrid"],
+  ["Sweden", "Stockholm"],
+];
+
+const countriesMap = new Map(countries);
+console.log(countriesMap);
