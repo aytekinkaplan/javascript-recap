@@ -40,3 +40,4 @@ const allLanguages = [
 
 const uniqueLanguages = new Set(allLanguages);
 console.log(uniqueLanguages);
+console.log(typeof uniqueLanguages);
