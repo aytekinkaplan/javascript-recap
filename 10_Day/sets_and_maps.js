@@ -45,3 +45,28 @@ console.log(typeof uniqueLanguages);
 const uniqueLanguagesArray = Array.from(uniqueLanguages);
 console.log(uniqueLanguagesArray);
 console.log(typeof uniqueLanguagesArray);
+
+// Adding elements to a set
+companies.add("Twitter");
+console.log(companies);
+
+// Removing elements from a set
+companies.delete("Twitter");
+console.log(companies);
+
+// Checking if an element exists in a set
+const hasGoogle = companies.has("Google");
+console.log("Does Google exist in the set?", hasGoogle);
+
+// Iterating over a set
+for (const company of companies) {
+  console.log(company);
+}
+
+// Converting a set to an array
+const companiesArray = Array.from(companies);
+console.log(companiesArray);
+
+// Converting an array to a set
+const companiesSet = new Set(companiesArray);
+console.log(companiesSet);
