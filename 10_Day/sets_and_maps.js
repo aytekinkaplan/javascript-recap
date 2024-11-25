@@ -70,3 +70,13 @@ console.log(companiesArray);
 // Converting an array to a set
 const companiesSet = new Set(companiesArray);
 console.log(companiesSet);
+
+// Finding the size of a set
+const size = companies.size;
+console.log("Size of the set:", size);
+
+// Clearing a set
+companies.clear();
+console.log(companies);
+
+// Creating a map
