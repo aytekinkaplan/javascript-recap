@@ -80,3 +80,32 @@ companies.clear();
 console.log(companies);
 
 // Creating a map
+const languages = new Map([
+  ["English", 1],
+  ["Spanish", 2],
+  ["French", 3],
+  ["German", 4],
+  ["English", 5],
+  ["Spanish", 6],
+  ["French", 7],
+  ["German", 8],
+  ["Arabic", 9],
+  ["Portuguese", 10],
+  ["Italian", 11],
+  ["Chinese", 12],
+  ["Japanese", 13],
+  ["Korean", 14],
+  ["Arabic", 15],
+  ["Portuguese", 16],
+  ["Italian", 17],
+  ["Chinese", 18],
+  ["Japanese", 19],
+  ["Korean", 20],
+  ["Arabic", 21],
+  ["Portuguese", 22],
+  ["Italian", 23],
+  ["Chinese", 24],
+  ["Japanese", 25],
+  ["Korean", 26],
+]);
+console.log(languages);
