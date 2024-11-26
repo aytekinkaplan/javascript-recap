@@ -16,3 +16,8 @@ console.log(city); // "New York"
 const person1 = { name: "John", age: 30 };
 const person2 = { ...person1, city: "New York" };
 console.log(person2); // { name: "John", age: 30, city: "New York" }
+
+const frontend = ["HTML", "CSS", "JavaScript", "React"];
+const backend = ["Node.js", "Express.js", "MongoDB", "MySQL"];
+const fullStack = [...frontend, ...backend];
+console.log(fullStack); // ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express.js", "MongoDB", "MySQL"]
