@@ -21,3 +21,24 @@ const frontend = ["HTML", "CSS", "JavaScript", "React"];
 const backend = ["Node.js", "Express.js", "MongoDB", "MySQL"];
 const fullStack = [...frontend, ...backend];
 console.log(fullStack); // ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express.js", "MongoDB", "MySQL"]
+
+// Object parameter without destructuring
+function printPerson(person) {
+  console.log(person.name);
+  console.log(person.age);
+  console.log(person.city);
+}
+
+// Object parameter with destructuring
+function printPerson({ name, age, city }) {
+  console.log(name);
+  console.log(age);
+  console.log(city);
+}
+
+// Object parameter with destructuring and default values
+function printPerson({ name = "John", age = 30, city = "New York" }) {
+  console.log(name);
+  console.log(age);
+  console.log(city);
+}
