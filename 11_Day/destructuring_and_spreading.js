@@ -42,3 +42,14 @@ function printPerson({ name = "John", age = 30, city = "New York" }) {
   console.log(age);
   console.log(city);
 }
+
+const rect = {
+  width: 20,
+  height: 10,
+};
+
+const calculatePerimeter = (rectangle) => {
+  return 2 * (rectangle.width + rectangle.height);
+};
+
+console.log(calculatePerimeter(rect));
