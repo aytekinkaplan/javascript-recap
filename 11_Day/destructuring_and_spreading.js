@@ -1,3 +1,5 @@
+const e = require("cors");
+
 // Destructing Arrays
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const [first, second, ...rest] = numbers;
@@ -146,3 +148,8 @@ const uniqueCountries = new Set(famousCountries);
 for (const country of uniqueCountries) {
   console.log(country);
 }
+
+const evenNumbers = [2, 4, 6, 8, 10];
+const oddNumbers = [1, 3, 5, 7, 9];
+const allNumbers = [...evenNumbers, ...oddNumbers];
+console.log(allNumbers.sort((a, b) => a - b));
