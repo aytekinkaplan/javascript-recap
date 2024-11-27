@@ -67,3 +67,15 @@ const calculateDiagonal = (rectangle) => {
 };
 
 console.log(calculateDiagonal(rect));
+
+const calculateCircumference = (circle) => {
+  return 2 * Math.PI * circle.radius;
+};
+
+console.log(calculateCircumference(rect));
+
+const calculateAreaOfCircle = (circle) => {
+  return Math.PI * circle.radius * circle.radius;
+};
+
+console.log(calculateAreaOfCircle(rect));
