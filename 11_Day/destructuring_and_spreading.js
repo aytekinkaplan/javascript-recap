@@ -113,3 +113,36 @@ const todoList = [
 for (const { task, time, completed } of todoList) {
   console.log(task, time, completed);
 }
+
+const famousCountries = [
+  "Jamaica",
+  "Panama",
+  "Costa Rica",
+  "El Salvador",
+  "Honduras",
+  "Nicaragua",
+  "Panama",
+  "Costa Rica",
+  "El Salvador",
+  "Honduras",
+  "Nicaragua",
+  "Panama",
+  "Costa Rica",
+  "El Salvador",
+  "Honduras",
+  "Nicaragua",
+  "Germany",
+  "France",
+  "Spain",
+  "Italy",
+  "Portugal",
+];
+
+for (const country of famousCountries) {
+  console.log(country);
+}
+
+const uniqueCountries = new Set(famousCountries);
+for (const country of uniqueCountries) {
+  console.log(country);
+}
