@@ -85,3 +85,9 @@ const calculateCircumferenceOfCircle = (circle) => {
 };
 
 console.log(calculateCircumferenceOfCircle(rect));
+
+const calculateAreaOfRectangle = (rectangle) => {
+  return rectangle.width * rectangle.height;
+};
+
+console.log(calculateAreaOfRectangle(rect));
