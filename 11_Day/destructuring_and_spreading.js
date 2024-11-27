@@ -79,3 +79,9 @@ const calculateAreaOfCircle = (circle) => {
 };
 
 console.log(calculateAreaOfCircle(rect));
+
+const calculateCircumferenceOfCircle = (circle) => {
+  return 2 * Math.PI * circle.radius;
+};
+
+console.log(calculateCircumferenceOfCircle(rect));
