@@ -53,3 +53,7 @@ const calculatePerimeter = (rectangle) => {
 };
 
 console.log(calculatePerimeter(rect));
+
+const calculateArea = (rectangle) => {
+  return rectangle.width * rectangle.height;
+};
