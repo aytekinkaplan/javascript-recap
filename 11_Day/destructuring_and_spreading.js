@@ -57,3 +57,13 @@ console.log(calculatePerimeter(rect));
 const calculateArea = (rectangle) => {
   return rectangle.width * rectangle.height;
 };
+
+console.log(calculateArea(rect));
+
+const calculateDiagonal = (rectangle) => {
+  return Math.sqrt(
+    rectangle.width * rectangle.width + rectangle.height * rectangle.height
+  );
+};
+
+console.log(calculateDiagonal(rect));
