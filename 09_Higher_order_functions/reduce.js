@@ -77,3 +77,11 @@ const productOfOddNumbers = numbers10.reduce(
   1
 );
 console.log(productOfOddNumbers); // Output: 60
+
+// Example 11
+const numbers11 = [1, 2, 3, 4, 5];
+const sumOfPositiveNumbers = numbers11.reduce(
+  (acc, cur) => (cur > 0 ? acc + cur : acc),
+  0
+);
+console.log(sumOfPositiveNumbers); // Output: 15
