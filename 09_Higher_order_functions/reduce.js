@@ -69,3 +69,11 @@ const productOfEvenNumbers = numbers9.reduce(
   1
 );
 console.log(productOfEvenNumbers); // Output: 480
+
+// Example 10
+const numbers10 = [1, 2, 3, 4, 5];
+const productOfOddNumbers = numbers10.reduce(
+  (acc, cur) => (cur % 2 !== 0 ? acc * cur : acc),
+  1
+);
+console.log(productOfOddNumbers); // Output: 60
