@@ -11,3 +11,23 @@ console.log(countries2); // Output: ["Finland", "Sweden", "Denmark"]
 const numbers = [1, 2, 3, 4, 5];
 const numbers2 = numbers.filter((number) => number > 3);
 console.log(numbers2); // Output: [4, 5]
+
+const countriesContainingLand = countries.filter((country) =>
+  country.includes("land")
+);
+console.log(countriesContainingLand); // Output: ["Finland", "Iceland"]
+
+const countriesEndsWithLand = countries.filter((country) =>
+  country.endsWith("land")
+);
+console.log(countriesEndsWithLand); // Output: ["Finland", "Iceland"]
+
+const countriesStartsWithN = countries.filter((country) =>
+  country.startsWith("N")
+);
+console.log(countriesStartsWithN); // Output: ["Norway"]
+
+const countriesStartsWithS = countries.filter((country) =>
+  country.startsWith("S")
+);
+console.log(countriesStartsWithS); // Output: ["Sweden"]
