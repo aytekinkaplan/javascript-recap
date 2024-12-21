@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "age": 30,
+      "job": "Developer",
+      "isMarried": true,
+      "email": "YKv0U@example.com"
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "age": 25,
+      "job": "Designer",
+      "isMarried": false,
+      "email": "YKv0U@example.com"
+    },
+    {
+      "firstName": "Bob",
+      "lastName": "Smith",
+      "age": 35,
+      "job": "Manager",
+      "isMarried": true,
+      "email": "YKv0U@example.com"
+    },
+    {
+      "firstName": "Alice",
+      "lastName": "Johnson",
+      "age": 28,
+      "job": "Developer",
+      "isMarried": false,
+      "email": "YKv0U@example.com"
+    }
+  ]
+}
