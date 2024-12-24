@@ -1,6 +1,6 @@
 const promise = new Promise((resolve, reject) => {
   let num = 11;
-  if (num === 10) {
+  if (num >= 10) {
     resolve("Success");
   } else {
     reject("Fail");
