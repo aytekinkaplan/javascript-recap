@@ -4,11 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document Object Model</title>
+    <style>
+      /* Styles for the unordered list and list items */
+      .wrapper ul {
+        padding: 0;
+        list-style: none;
+      }
+      .wrapper li {
+        color: red;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px 0;
+        padding: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: lightgray;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+      .wrapper li.completed {
+        color: green;
+        background-color: lightgreen;
+        text-decoration: line-through;
+      }
+    </style>
   </head>
   <body>
-    <h1 class="title" id="first-title">First Title</h1>
-    <h1 class="title" id="second-title">Second Title</h1>
-    <h1 class="title" id="third-title">Third Title</h1>
-    <h1></h1>
+    <div class="wrapper">
+      <h1>Aytekin Kaplan challenges in 2024</h1>
+      <h2>JavaScript Challenges in 2024</h2>
+      <ul id="learning-list"></ul>
+    </div>
+    <script src="script.js" defer></script>
   </body>
 </html>
