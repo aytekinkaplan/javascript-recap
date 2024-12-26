@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <script>
+      // Create 10 <h1> elements
+      let list_of_ = [
+        "Java Learning is Fun",
+        "Python for Data Science is the best choice",
+        "C is the best programming language",
+        "C++ is the best programming language",
+        "C# is the best programming language",
+        "JavaScript is the best programming language",
+        "Swift is the best programming language",
+        "Ruby is the best programming language",
+        "Go is the best programming language",
+        "Rust is the best programming language",
+      ];
+      let title;
+      for (let i = 0; i < list_of_.length; i++) {
+        title = document.createElement("h1");
+        title.className = "title";
+        title.style.fontSize = "2rem";
+        title.style.color = "red";
+        title.textContent = list_of_[i];
+        document.body.appendChild(title);
+      }
+    </script>
+  </body>
+</html>
